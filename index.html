@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>005_example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="nav nav-tabs mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#info">INFORMÁTICA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#mate">MATEMÁTICAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#quimica">QUÍMICA</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane active" id="info">
+            <br>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" style="color: black" data-toggle="collapse" href="#mWord">
+                            Microsoft Word
+                        </a>
+                    </div>
+                    <div id="mWord" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>
+                                Microsoft Word es un programa informático orientado al procesamiento de textos. Fue creado por la empresa Microsoft, y viene
+                                integrado predeterminadamente en el paquete ofimático denominado Microsoft Office.
+                                <br></br>
+                                Originalmente fue desarrollado por Richard Brodie para el computador de IBM bajo sistema operativo DOS en 1983. Versiones
+                                subsecuentes fueron programadas para muchas otras plataformas, incluyendo, las computadoras
+                                IBM que corrían en sistema MS-DOS (1983). Es un componente de la suite ofimática Microsoft
+                                Office; también es vendido de forma independiente e incluido en la suite de Microsoft Works.
+                                Las versiones actuales son Microsoft Office Word 2016 para Windows y Microsoft Office Word
+                                2016 para Mac.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" style="color:black" data-toggle="collapse" href="#mExcel">
+                            Microsoft Excel
+                        </a>
+                    </div>
+                    <div id="mExcel" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            Microsoft Excel es una aplicación de hojas de cálculo que forma parte de la suite de oficina Microsoft Office. Es una aplicación
+                            utilizada en tareas financieras y contables, con fórmulas, gráficos y un lenguaje de programación.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="mate">
+            <br>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" style="color:black" data-toggle="collapse" href="#calculadora">
+                            Calculadora
+                        </a>
+                    </div>
+                    <div id="calculadora" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <form>
+                                <fieldset class="form-group">
+                                    <legend class="col-form-label pt-0">Operación</legend>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="gridRadios1">
+                                            Suma
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                        <label class="form-check-label" for="gridRadios2">
+                                            Resta
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                        <label class="form-check-label" for="gridRadios3">
+                                            Multiplicación
+                                        </label>
+                                    </div>
+                                </fieldset>
+                                <div class="form-group">
+                                    <label for="inputNumeroUno">Número 1</label>
+                                    <input type="number" class="form-control" id="inputNumeroUno" name="numerouno">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputNumero2">Número 2</label>
+                                    <input type="number" class="form-control" id="inputNumero2" name="numero2">
+                                </div>
+                                <h3>
+                                    Resultado:
+                                </h3>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br> Realiza operaciónes matemáticas
+        </div>
+        <div class="tab-pane fade" id="quimica">
+            <div class="container-fluid">
+                <br>
+                <br>
+                <div class="form-row">
+                    <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <table class="table">
+                            <tr>
+                                <td>Materia
+                                    <hr />
+                                </td>
+                                <td>La materia es todo lo que ocupa espacio, tiene una propiedad llamada masa y posee inercia.
+                                    Cada ser humano es un objeto material. Todos ocupamos espacio y describimos nuestra masa
+                                    por medio de una propiedad relacionada con ella, el peso. Todos los objetos que vemos
+                                    a nuestro alrededor son objetos materiales.</td>
+                            </tr>
+                            <tr>
+                                <td>Átomo
+                                    <hr />
+                                </td>
+                                <td>Átomo es una de las unidades mas pequeña de la materia sus propiedades no se pueden dividir
+                                    mediante procesos químicos; sin embargo con el desarrollo de la física nuclear en el
+                                    siglo XX se comprobó que el átomo puede subdividirse en partículas más pequeñas, denominadas
+                                    partículas subatómicas, que se ubican en una región central del mismo denominada núcleo
+                                    atomico y una región periférica, los orbitales electrónicos. </td>
+                            </tr>
+                            <tr>
+                                <td>Elemento
+                                    <hr />
+                                </td>
+                                <td>Hace referencia a una clase de átomos, todos ellos con el mismo número de protones en su
+                                    núcleo. Aunque, por tradición, se puede definir elemento químico como aquella sustancia
+                                    que si puede ser descompuesta, mediante una reacción química, en otras más simples.</td>
+                            </tr>
+                            <tr>
+                                <td>Compuesto
+                                    <hr />
+                                </td>
+                                <td>Un compuesto es una sustancia formada por la unión de dos o más átomos en una razón fija.
+                                    Una característica esencial es que tiene una fórmula química. Por ejemplo, el agua es
+                                    un compuesto formado por hidrógeno y oxígeno en la razón de 2 a 1 (en número de átomos).</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
